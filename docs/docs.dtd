@@ -1,0 +1,15 @@
+<!ELEMENT document (element+)>
+
+<!ELEMENT element (title, text?, code?, sample?)>
+<!ATTLIST element href CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT text (#PCDATA | c | v | s | o | p | br)*>
+<!ELEMENT sample (#PCDATA | br | p)*>
+
+<!ELEMENT c (#PCDATA | v | s | o | p | br)*>
+<!ELEMENT v (#PCDATA)>
+<!ELEMENT s (#PCDATA)>
+<!ELEMENT o (#PCDATA|v)*>
+<!ELEMENT p EMPTY>
+<!ELEMENT br EMPTY>

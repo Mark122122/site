@@ -1,0 +1,32 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../docs.css">
+</head>
+<body>
+<div class="element">
+<a href="https://www.w3schools.com/xml/xml_dtd_elements.asp">Elements</a>
+</div>
+<div class="sample">
+<span class="code">&lt;ELEMENT element-name EMPTY&gt;</span> - empty element<br>
+<span class="code">&lt;!ELEMENT element-name (#PCDATA)&gt;</span> - elements with Parsed Character Data<br>
+<span class="code">&lt;!ELEMENT element-name ANY&gt;</span> - elements with any contents<br>
+<span class="code">&lt;!ELEMENT element-name (child1,child2,...)&gt;</span> - elements with children<br>
+<span class="code">&lt;!ELEMENT element-name (child-name)&gt;</span> - only one occurrence of an element<br>
+<span class="code">&lt;!ELEMENT element-name (child-name+)&gt;</span> - minimum one occurrence of an element<br>
+<span class="code">&lt;!ELEMENT element-name (child-name*)&gt;</span> - zero or zore occurrences of an element<br>
+<span class="code">&lt;!ELEMENT element-name (child-name?)&gt;</span> - zero or one occurrences of an element <br>
+<span class="code">&lt;!ELEMENT note (to,from,header,(message|body))&gt;</span> - "message" or "body"<br>
+</div>
+<div class="element">
+<a href="https://www.w3schools.com/xml/xml_dtd_attributes.asp">Attributes</a>
+</div>
+<div class="sample">
+<span class="code">&lt;!ATTLIST person number CDATA&gt;</span> - attribute value is character data<br>
+<span class="code">&lt;!ATTLIST person number CDATA #REQUIRED&gt;</span> - attribute required<br>
+<span class="code">&lt;!ATTLIST contact fax CDATA #IMPLIED&gt;</span> - attribute not required<br>
+<span class="code">&lt;!ATTLIST payment type (check|cash)&gt;</span> - attribute value may be "check" or "cash"<br>
+</div>
+</body>
+</html>

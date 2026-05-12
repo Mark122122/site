@@ -1,0 +1,51 @@
+* {
+	font-family: Verdana, sans-serif;  
+	font-size: 12px;	
+}
+
+a {  color: #0000C0;}
+a:link, a:visited {  text-decoration: none;}
+
+div.element {
+	margin: 25px 0px 5px 0px;
+	}	
+	
+	div.element a{
+	font-size: 14px;		
+	font-weight: bold;	
+	}
+
+/* Code block */
+span.c {
+	color: #010;
+	background-color: #ffa;	
+	}
+
+/* Variable parameter in code block	 */
+span.v {
+	color: #c00;
+	}	
+
+span.o {
+	color: #888;
+	}
+	
+span.s {
+	color: #00f;
+	/* font-weight: bold;	 */
+	}
+	
+span.p {
+	margin: 0px 0px 0px 20px;
+	}	
+
+/* Sample code block	 */
+div.sample {
+	/* max-width: 80px; */
+	display: inline-block;
+	color: #000;
+	background-color: #eee;
+	border: 1px solid #bbb;
+	padding: 5px;
+	margin: 2px 0px;
+	}

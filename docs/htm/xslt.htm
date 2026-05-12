@@ -1,0 +1,97 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<link rel="stylesheet" href="../docs.css">
+</head>
+<body>
+<h2>Table of contens</h2>
+<a href="#N65539">&lt;xsl:apply-templates&gt;</a>
+<br>
+<a href="#N65567">&lt;xsl:attribute&gt;</a>
+<br>
+<a href="#N65623">&lt;xsl:for-each&gt;</a>
+<br>
+<a href="#N65647">&lt;xsl:template&gt;</a>
+<br>
+<a href="#N65597">&lt;xsl:variable&gt;</a>
+<br>
+<div id="N65539" class="element">
+<hr>
+<a href="https://www.w3schools.com/xml/ref_xsl_el_apply-templates.asp">&lt;xsl:apply-templates&gt;</a>
+</div>Element applies a template to the current element or to the current element's child nodes<br>
+<div class="code">
+&lt;xsl:apply-templates select="<span class="var">expression</span>"<span class="opt"> mode="<span class="var">name</span>"</span>&gt;<br>
+...<br>
+&lt;/xsl:apply-templates&gt;<br>
+</div>
+<br>
+<div class="sample">
+&lt;xsl:template match="title"&gt;<br>
+  &lt;h1&gt;&lt;xsl:apply-templates/&gt;&lt;/h1&gt;<br>
+&lt;/xsl:template&gt;
+</div>
+<br>
+<div id="N65567" class="element">
+<hr>
+<a href="https://www.w3schools.com/xml/ref_xsl_el_attribute.asp">&lt;xsl:attribute&gt;</a>
+</div>Element is used to add attributes to elements<br>
+<div class="code">
+&lt;xsl:attribute name="<span class="var">name</span>"&gt;<br>
+...<br>
+&lt;/xsl:attribute&gt;<br>
+</div>
+<br>
+<div class="sample">
+&lt;img&gt;<br>
+<span class="p"></span>&lt;xsl:attribute name="src"&gt;<br>
+<span class="p"></span><span class="p"></span>&lt;xsl:value-of select="url" /&gt;<br>
+<span class="p"></span>&lt;/xsl:attribute&gt;<br>
+&lt;/img&gt;
+</div>
+<br>
+<div id="N65623" class="element">
+<hr>
+<a href="https://www.w3schools.com/xml/ref_xsl_el_for-each.asp">&lt;xsl:for-each&gt;</a>
+</div>Element loops through each node in a specified node set<br>
+<div class="code">
+&lt;xsl:for-each select="<span class="var">expression</span>"&gt;<br>
+...<br>
+&lt;/xsl:for-each&gt;<br>
+</div>
+<br>
+<div class="sample">
+&lt;xsl:for-each select="catalog/cd"&gt;<br>
+<span class="p"></span>&lt;xsl:value-of select="title"/&gt;<br>
+&lt;/xsl:for-each&gt;<br>
+</div>
+<br>
+<div id="N65647" class="element">
+<hr>
+<a href="https://www.w3schools.com/xml/ref_xsl_el_template.asp">&lt;xsl:template&gt;</a>
+</div>Element contains rules to apply when a specified node is matched<br>
+<div class="code">
+&lt;xsl:template <span class="opt">name="<span class="var">name</span>" match="<span class="var">pattern</span>" mode="<span class="var">mode</span>"</span>&gt;<br>
+...<br>
+&lt;/xsl:template&gt;
+<br>
+</div>
+<br>
+<div id="N65597" class="element">
+<hr>
+<a href="https://www.w3schools.com/xml/ref_xsl_el_variable.asp">&lt;xsl:variable&gt;</a>
+</div>Element is used to declare a local or global variable<br>
+<div class="code">
+ &lt;xsl:variable name="<span class="var">name</span>" select="<span class="var">expression</span>"&gt;<br>
+...<br>
+&lt;/xsl:variable&gt;<br>
+</div>
+<br>
+<div class="sample">
+ &lt;xsl:variable name="num" select="1"/&gt;<br>
+ ...<br>
+ &lt;xsl:value-of select="$num"/&gt;<br>
+</div>
+<br>
+</body>
+</html>
